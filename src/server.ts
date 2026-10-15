@@ -41,6 +41,25 @@ app.use('/api/matches', matchRoutes);
 app.use('/api/registrations', registrationRoutes);
 app.use('/api/payment', paymentRoutes);
 
+// Root Welcome Route
+app.get('/', (req: Request, res: Response) => {
+  res.json({
+    message: '⚽ Fackson Football Academy API is running!',
+    status: 'online',
+    version: '1.0.0',
+    academy: 'Fackson Football Academy (Next Pro Men & Angels Women)',
+    endpoints: {
+      health: '/api/health',
+      players: '/api/players',
+      news: '/api/news',
+      matches: '/api/matches',
+      gallery: '/api/gallery',
+      registrations: '/api/registrations',
+      auth: '/api/auth'
+    }
+  });
+});
+
 // Health check route
 app.get('/api/health', (req: Request, res: Response) => {
   res.json({

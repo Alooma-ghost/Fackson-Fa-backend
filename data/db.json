@@ -3,7 +3,7 @@
   "gallery": [],
   "news": [
     {
-      "_id": "4b49b5b9-20cf-4b84-ac1c-db2e0e0df6c9",
+      "_id": "1dc3374e-d432-4fc4-b6c0-a0bade62804e",
       "title": "Fackson Next Pro & Angels Announce 2026/2027 Open Academy Trials",
       "slug": "open-academy-trials-2026-2027",
       "excerpt": "Registration is now officially open for boys and girls across U-10, U-13, U-17, and Free Age squads.",
@@ -13,10 +13,10 @@
       "author": "Academy Director",
       "date": "2026-10-10",
       "featured": true,
-      "createdAt": "2026-10-15T11:51:45.108Z"
+      "createdAt": "2026-10-15T13:23:20.980Z"
     },
     {
-      "_id": "48faaebb-4921-4779-b7fb-b8e589cd49ab",
+      "_id": "58b2d8ea-839b-479c-8858-8817ac859b57",
       "title": "Fackson Angels U17 Crowned Champions in Regional Invitational",
       "slug": "fackson-angels-u17-crowned-champions",
       "excerpt": "A sensational 3-1 triumph secured the golden trophy for our high-flying angels squad.",
@@ -26,10 +26,10 @@
       "author": "Head Coach Fatima",
       "date": "2026-10-04",
       "featured": true,
-      "createdAt": "2026-10-15T11:51:45.109Z"
+      "createdAt": "2026-10-15T13:23:20.981Z"
     },
     {
-      "_id": "47ffda2e-e863-4f02-a0a4-f428518b1557",
+      "_id": "1ad85c75-2fd0-4b86-8f86-91a8989bc349",
       "title": "Next Pro U17 Scouting Showcase Attracts International Scouts",
       "slug": "next-pro-u17-scouting-showcase",
       "excerpt": "Over 8 club scouts attended the weekend showcase at the Fackson Complex.",
@@ -39,12 +39,12 @@
       "author": "Chief Scout",
       "date": "2026-09-28",
       "featured": false,
-      "createdAt": "2026-10-15T11:51:45.109Z"
+      "createdAt": "2026-10-15T13:23:20.981Z"
     }
   ],
   "matches": [
     {
-      "_id": "176e7d93-0ef8-4696-8eb3-949533e8155d",
+      "_id": "8f86fcc8-9693-4a0f-8322-ae4ada06426b",
       "title": "Fackson Next Pro U17 vs Apex Football Club",
       "homeTeam": "Fackson Next Pro U17",
       "awayTeam": "Apex Stars FC",
@@ -59,10 +59,10 @@
       "homeScore": 0,
       "awayScore": 0,
       "competition": "State Elite Youth League",
-      "createdAt": "2026-10-15T11:51:45.109Z"
+      "createdAt": "2026-10-15T13:23:20.981Z"
     },
     {
-      "_id": "b5252164-bc93-446a-af37-4ae7692f811c",
+      "_id": "4847b239-0d5b-43ca-94a9-9f5717d46e98",
       "title": "Fackson Angels Senior vs Royal Queens FC",
       "homeTeam": "Fackson Angels Senior",
       "awayTeam": "Royal Queens FC",
@@ -77,10 +77,10 @@
       "homeScore": 0,
       "awayScore": 0,
       "competition": "National Championship Super Cup",
-      "createdAt": "2026-10-15T11:51:45.109Z"
+      "createdAt": "2026-10-15T13:23:20.981Z"
     },
     {
-      "_id": "a9a7f7af-a26e-42c3-8f3a-7437b93a2e9c",
+      "_id": "cd10bb95-adb4-4b92-b55c-330358189066",
       "title": "Fackson Next Pro U13 vs City United Youth",
       "homeTeam": "Fackson Next Pro U13",
       "awayTeam": "City United Youth",
@@ -95,10 +95,10 @@
       "homeScore": 4,
       "awayScore": 1,
       "competition": "Youth Cup Quarter Final",
-      "createdAt": "2026-10-15T11:51:45.109Z"
+      "createdAt": "2026-10-15T13:23:20.981Z"
     },
     {
-      "_id": "1ef08870-e066-462a-89b8-44219295025d",
+      "_id": "53fefc54-ff6c-4af1-abdf-cb1cbe2d3dc7",
       "title": "Fackson Angels U17 vs Metropolitan Stars",
       "homeTeam": "Fackson Angels U17",
       "awayTeam": "Metropolitan Stars",
@@ -113,12 +113,12 @@
       "homeScore": 3,
       "awayScore": 1,
       "competition": "Regional Invitational Final",
-      "createdAt": "2026-10-15T11:51:45.109Z"
+      "createdAt": "2026-10-15T13:23:20.981Z"
     }
   ],
   "registrations": [
     {
-      "_id": "089b02e6-1668-46c5-85a6-2dbf2529f3ee",
+      "_id": "14660308-3470-4c0d-bfdb-d9e587ddf83c",
       "playerName": "Michael Okorie",
       "dateOfBirth": "2012-06-15",
       "gender": "male",
@@ -130,7 +130,7 @@
       "position": "Attacking Midfielder",
       "experience": "Captain of St. Jude School team, 3 years grassroots experience",
       "status": "reviewed",
-      "createdAt": "2026-10-15T11:51:45.109Z"
+      "createdAt": "2026-10-15T13:23:20.981Z"
     }
   ],
   "payments": []
