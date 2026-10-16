@@ -1,44 +1,5 @@
 {
-  "players": [
-    {
-      "_id": "15e0a64e-c10e-4adc-9771-2ce71269b7ca",
-      "name": "Fawas Idris",
-      "academy": "next_pro",
-      "category": "u17",
-      "position": "Forward",
-      "jerseyNumber": 10,
-      "age": 16,
-      "photoUrl": "/uploads/fackson_1792156238865_81234984.jpeg",
-      "bio": "Team Captain and prolific attacking forward for Fackson Next Pro.",
-      "stats": {
-        "appearances": 116,
-        "goals": 34,
-        "assists": 18,
-        "cleanSheets": 0
-      },
-      "featured": true,
-      "createdAt": "2026-10-16T13:10:48.752Z"
-    },
-    {
-      "_id": "player-fc-koper-star",
-      "name": "Ahmed Ankrah",
-      "academy": "next_pro",
-      "category": "free_age",
-      "position": "Midfielder",
-      "jerseyNumber": 8,
-      "age": 21,
-      "photoUrl": "/uploads/fackson_1792063109712_949755031.jpeg",
-      "bio": "Dynamic central midfielder and standout academy graduate competing in European league football with FC Koper.",
-      "stats": {
-        "appearances": 42,
-        "goals": 8,
-        "assists": 14,
-        "cleanSheets": 0
-      },
-      "featured": true,
-      "createdAt": "2026-10-15T12:18:29.000Z"
-    }
-  ],
+  "players": [],
   "gallery": [
     {
       "_id": "gal-papa-national",
@@ -186,20 +147,6 @@
   ],
   "news": [
     {
-      "_id": "news-match-pch-vs-fackson-nextpro",
-      "title": "MATCH FIXTURE: PCH FC vs Fackson NextPro (11 v 11)",
-      "slug": "match-fixture-pch-fc-vs-fackson-nextpro-abule-adoo",
-      "excerpt": "Away fixture scheduled for 2026-10-17 at 12:53. Venue: Abule adoo. Competition: Abule Adoo Competition.",
-      "content": "OFFICIAL MATCH FIXTURE ANNOUNCEMENT\n\nThe academy management has confirmed the upcoming fixture:\n\n• Fixture: PCH FC vs Fackson NextPro\n• Match Type: Away Fixture (Visiting Squad)\n• Competition: Abule Adoo Competition\n• Game Format: 11 v 11\n• Match Date: 2026-10-17\n• Kickoff Time: 12:53 (WAT)\n• Venue / Pitch: Abule adoo\n• Academy Squad: Fackson Next Pro (Male) [Senior First Team]\n• Status: UPCOMING\n\nSupporters and scouts are warmly invited to watch our squad in action at Abule adoo.",
-      "coverImage": "/logos/fackson-next-pro.jpg",
-      "category": "match_fixture",
-      "academy": "next_pro",
-      "author": "Fackson FA Matchday Desk",
-      "date": "2026-10-17",
-      "featured": true,
-      "createdAt": "2026-10-16T19:30:00.000Z"
-    },
-    {
       "_id": "380eefb1-02e7-490f-a350-8d0d1968a536",
       "title": "Fackson Next Pro & Angels Announce 2026/2027 Open Academy Trials",
       "slug": "open-academy-trials-2026-2027",
@@ -311,46 +258,6 @@
       "awayScore": 1,
       "competition": "Regional Invitational Final",
       "createdAt": "2026-10-16T09:39:30.398Z"
-    },
-    {
-      "_id": "74a96f17-1e75-4e87-9e69-4c4641fa05a8",
-      "title": "Fackson Next Pro U17 vs apex",
-      "homeTeam": "Fackson Next Pro U17",
-      "awayTeam": "apex",
-      "homeLogo": "/logos/fackson-next-pro.jpg",
-      "awayLogo": "/uploads/fackson_1792156271749_511476375.jpeg",
-      "academy": "next_pro",
-      "category": "u17",
-      "date": "2026-10-16",
-      "time": "15:00",
-      "venue": "Meiran Field Estate - Ojokoro Housing Estate Field, Meiran Alagbado",
-      "status": "upcoming",
-      "homeScore": 0,
-      "awayScore": 0,
-      "competition": "CY UNITY CUP",
-      "gameType": "8 aside",
-      "scorers": [],
-      "createdAt": "2026-10-16T13:11:55.727Z"
-    },
-    {
-      "_id": "match-pch-vs-fackson-nextpro",
-      "title": "PCH FC vs Fackson NextPro",
-      "homeTeam": "PCH FC",
-      "awayTeam": "Fackson NextPro",
-      "homeLogo": "",
-      "awayLogo": "/logos/fackson-next-pro.jpg",
-      "academy": "next_pro",
-      "category": "free_age",
-      "date": "2026-10-17",
-      "time": "12:53",
-      "venue": "Abule adoo",
-      "status": "upcoming",
-      "homeScore": 0,
-      "awayScore": 0,
-      "competition": "Abule Adoo Competition",
-      "gameType": "11 v 11",
-      "scorers": [],
-      "createdAt": "2026-10-16T19:30:00.000Z"
     }
   ],
   "registrations": [
