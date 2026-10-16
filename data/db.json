@@ -1,22 +1,143 @@
 {
   "players": [],
-  "gallery": [],
+  "gallery": [
+    {
+      "_id": "gal-papa-national",
+      "title": "Papa Mustapha Daniel — Nigerian Super Eagles Debut",
+      "caption": "Fackson Next Pro graduate Papa Mustapha Daniel wearing the Nigerian green & white #17 jersey with hand on chest after earning his senior international call-up.",
+      "category": "matches",
+      "academy": "next_pro",
+      "imageUrl": "/images/gallery/papa-national-team.jpg",
+      "tags": ["Papa Mustapha Daniel", "Super Eagles", "Nigeria", "Alumni", "NK Celje"],
+      "createdAt": "2026-10-16T10:00:00.000Z"
+    },
+    {
+      "_id": "gal-fatimo-training",
+      "title": "Fatimo Shuaib (#20) — Agility & Hurdle Drills at Meiran Grounds",
+      "caption": "Fackson Angels star forward/defender Fatimo Shuaib executing speed, hurdle jumping, and agility coordination routines at Meiran Field Estate - Ojokoro Housing Estate Field.",
+      "category": "training",
+      "academy": "angels",
+      "imageUrl": "/images/gallery/fatimo-shuaib-training.jpg",
+      "tags": ["Fatimo Shuaib", "Fackson Angels", "Training", "Meiran Field Estate", "Agility"],
+      "createdAt": "2026-10-16T09:50:00.000Z"
+    },
+    {
+      "_id": "gal-fatimo-match",
+      "title": "Fatimo Shuaib (#20) — High-Stakes Competitive Match Duel",
+      "caption": "Fackson Angels pioneer standout Fatimo Shuaib challenging an aerial duel with tenacity, balance, and tactical awareness in competitive league action.",
+      "category": "matches",
+      "academy": "angels",
+      "imageUrl": "/images/gallery/fatimo-shuaib-match-action.jpg",
+      "tags": ["Fatimo Shuaib", "Match Action", "Duel", "Fackson Angels", "NWFL"],
+      "createdAt": "2026-10-16T09:40:00.000Z"
+    },
+    {
+      "_id": "gal-fatimo-flamingos",
+      "title": "Nigeria U-17 Flamingos — Official National Squad Lineup",
+      "caption": "Fackson Angels graduate Fatimo Shuaib (kneeling front right, #20) lining up with the Nigerian U-17 National Team (Flamingos) ahead of the FIFA U-17 World Cup Morocco.",
+      "category": "matches",
+      "academy": "angels",
+      "imageUrl": "/images/gallery/fatimo-shuaib-flamingos-team.jpg",
+      "tags": ["Fatimo Shuaib", "Nigeria Flamingos", "FIFA U-17 World Cup", "Fackson Angels", "National Team"],
+      "createdAt": "2026-10-16T09:30:00.000Z"
+    },
+    {
+      "_id": "gal-papa-celje",
+      "title": "Papa Mustapha Daniel — In Full Flight for NK Celje",
+      "caption": "Academy alumnus Papa Mustapha Daniel unleashing a strike during competitive Slovenian PrvaLiga match action for European league powerhouse NK Celje.",
+      "category": "matches",
+      "academy": "next_pro",
+      "imageUrl": "/images/gallery/papa-celje-strike.jpg",
+      "tags": ["Papa Daniel", "NK Celje", "Slovenia PrvaLiga", "European League"],
+      "createdAt": "2026-10-16T09:20:00.000Z"
+    },
+    {
+      "_id": "gal-rasheed-signing",
+      "title": "Rasheed Ibrahim Akanbi — Boluspor Contract Signing",
+      "caption": "Fackson Football Academy graduate Rasheed Ibrahim Akanbi holding the club jersey upon completing his transfer to Turkish TFF 1. Lig club Boluspor (July 2025).",
+      "category": "academy_life",
+      "academy": "next_pro",
+      "imageUrl": "/images/gallery/rasheed-akanbi-boluspor.jpg",
+      "tags": ["Rasheed Akanbi", "Boluspor", "Turkey TFF 1. Lig", "Transfer Signing", "Alumni"],
+      "createdAt": "2026-10-16T09:10:00.000Z"
+    },
+    {
+      "_id": "gal-rasheed-action",
+      "title": "Rasheed Akanbi — Turkish TFF 1. Lig Goal Threat",
+      "caption": "Rasheed Akanbi attacking the penalty area for Boluspor, showcasing the speed and finishing instills honed during his formative years at Fackson FA.",
+      "category": "matches",
+      "academy": "next_pro",
+      "imageUrl": "/images/gallery/rasheed-akanbi-action.jpg",
+      "tags": ["Rasheed Akanbi", "Boluspor", "Match Action", "Goal Scoring", "Europe"],
+      "createdAt": "2026-10-16T09:00:00.000Z"
+    },
+    {
+      "_id": "gal-rasheed-sheriff",
+      "title": "Rasheed Akanbi — UEFA European Goal Celebration",
+      "caption": "Rasheed Akanbi in prayer celebration for Sheriff Tiraspol during UEFA European competition, celebrating a match-defining continental goal.",
+      "category": "trophies",
+      "academy": "next_pro",
+      "imageUrl": "/images/gallery/rasheed-akanbi-sheriff.jpg",
+      "tags": ["Rasheed Akanbi", "Sheriff Tiraspol", "UEFA Europa League", "Celebration", "Europe"],
+      "createdAt": "2026-10-16T08:50:00.000Z"
+    },
+    {
+      "_id": "gal-rasheed-ronaldo",
+      "title": "Rasheed Akanbi with Cristiano Ronaldo — UEFA Europa League",
+      "caption": "From Meiran Field Estate to European football royalty: Fackson FA alumnus Rasheed Ibrahim Akanbi with Cristiano Ronaldo after facing Manchester United.",
+      "category": "academy_life",
+      "academy": "next_pro",
+      "imageUrl": "/images/gallery/rasheed-akanbi-ronaldo.jpg",
+      "tags": ["Rasheed Akanbi", "Cristiano Ronaldo", "Manchester United", "Sheriff Tiraspol", "UEFA Europa League"],
+      "createdAt": "2026-10-16T08:40:00.000Z"
+    },
+    {
+      "_id": "gal-tactical-training",
+      "title": "Fackson Next Pro — Tactical Squad Drills",
+      "caption": "Next Pro youth players running tactical shape and possession transition circuits at Meiran Field Estate - Ojokoro Housing Estate Field.",
+      "category": "training",
+      "academy": "next_pro",
+      "imageUrl": "/images/training-1.jpg",
+      "tags": ["Next Pro", "Training", "Tactical Drills", "Meiran Field Estate"],
+      "createdAt": "2026-10-16T08:30:00.000Z"
+    },
+    {
+      "_id": "gal-angels-match",
+      "title": "Fackson Angels — Competitive Matchday Action",
+      "caption": "Fackson Angels squad in high-tempo match play, asserting technical superiority and sharp passing combinations on the pitch.",
+      "category": "matches",
+      "academy": "angels",
+      "imageUrl": "/images/angels-action-1.jpg",
+      "tags": ["Fackson Angels", "Matchday", "Female Football", "Lagos"],
+      "createdAt": "2026-10-16T08:20:00.000Z"
+    },
+    {
+      "_id": "gal-trophy-lift",
+      "title": "Fackson Academy — Championship Trophy Celebration",
+      "caption": "Coaches, players, and technical staff celebrating an emphatic championship tournament victory, lifting the gold trophy.",
+      "category": "trophies",
+      "academy": "all",
+      "imageUrl": "/images/trophy-celebration.jpg",
+      "tags": ["Champions", "Trophy Celebration", "Fackson FA", "Victory"],
+      "createdAt": "2026-10-16T08:10:00.000Z"
+    }
+  ],
   "news": [
     {
-      "_id": "1dc3374e-d432-4fc4-b6c0-a0bade62804e",
+      "_id": "380eefb1-02e7-490f-a350-8d0d1968a536",
       "title": "Fackson Next Pro & Angels Announce 2026/2027 Open Academy Trials",
       "slug": "open-academy-trials-2026-2027",
       "excerpt": "Registration is now officially open for boys and girls across U-10, U-13, U-17, and Free Age squads.",
-      "content": "Fackson Football Academy management is thrilled to announce the commencement of recruitment for the upcoming 2026/2027 competitive season. Both Fackson Next Pro (Men) and Fackson Angels (Women) are scouting prospective talent who demonstrate technical promise, athletic dynamism, and sportsmanship.\n\nTrials will take place at the Fackson Academy Stadium Complex under the direct supervision of licensed coaches, European scout liaisons, and technical staff. Registered participants will undergo physical conditioning tests, 1v1 technical assessments, and full 11-a-side showcase matches.\n\nProspective athletes and parents are invited to fill out the online registration form through this portal.",
+      "content": "Fackson Football Academy management is thrilled to announce the commencement of recruitment for the upcoming 2026/2027 competitive season. Both Fackson Next Pro (Male) and Fackson Angels (Female) are scouting prospective talent who demonstrate technical promise, athletic dynamism, and sportsmanship.\n\nTrials will take place at Meiran Field Estate - Ojokoro Housing Estate Field, Meiran Alagbado under the direct supervision of licensed coaches, European scout liaisons, and technical staff. Registered participants will undergo physical conditioning tests, 1v1 technical assessments, and full 11-a-side showcase matches.\n\nProspective athletes and parents are invited to fill out the online registration form through this portal.",
       "coverImage": "/images/training-1.jpg",
       "academy": "all",
       "author": "Academy Director",
       "date": "2026-10-10",
       "featured": true,
-      "createdAt": "2026-10-15T13:23:20.980Z"
+      "createdAt": "2026-10-16T09:39:30.397Z"
     },
     {
-      "_id": "58b2d8ea-839b-479c-8858-8817ac859b57",
+      "_id": "ef2e1f4b-27df-4a03-a470-e632a22ef166",
       "title": "Fackson Angels U17 Crowned Champions in Regional Invitational",
       "slug": "fackson-angels-u17-crowned-champions",
       "excerpt": "A sensational 3-1 triumph secured the golden trophy for our high-flying angels squad.",
@@ -26,10 +147,10 @@
       "author": "Head Coach Fatima",
       "date": "2026-10-04",
       "featured": true,
-      "createdAt": "2026-10-15T13:23:20.981Z"
+      "createdAt": "2026-10-16T09:39:30.398Z"
     },
     {
-      "_id": "1ad85c75-2fd0-4b86-8f86-91a8989bc349",
+      "_id": "5bfdc10f-6677-4ce7-a0f1-c22653eb1a09",
       "title": "Next Pro U17 Scouting Showcase Attracts International Scouts",
       "slug": "next-pro-u17-scouting-showcase",
       "excerpt": "Over 8 club scouts attended the weekend showcase at the Fackson Complex.",
@@ -39,12 +160,12 @@
       "author": "Chief Scout",
       "date": "2026-09-28",
       "featured": false,
-      "createdAt": "2026-10-15T13:23:20.981Z"
+      "createdAt": "2026-10-16T09:39:30.398Z"
     }
   ],
   "matches": [
     {
-      "_id": "8f86fcc8-9693-4a0f-8322-ae4ada06426b",
+      "_id": "9aa08361-026b-4f26-835a-1c986b1b0d10",
       "title": "Fackson Next Pro U17 vs Apex Football Club",
       "homeTeam": "Fackson Next Pro U17",
       "awayTeam": "Apex Stars FC",
@@ -54,15 +175,15 @@
       "category": "u17",
       "date": "2026-10-24",
       "time": "16:00",
-      "venue": "Fackson Academy Stadium Complex, Pitch 1",
+      "venue": "Meiran Field Estate - Ojokoro Housing Estate Field, Meiran Alagbado",
       "status": "upcoming",
       "homeScore": 0,
       "awayScore": 0,
       "competition": "State Elite Youth League",
-      "createdAt": "2026-10-15T13:23:20.981Z"
+      "createdAt": "2026-10-16T09:39:30.398Z"
     },
     {
-      "_id": "4847b239-0d5b-43ca-94a9-9f5717d46e98",
+      "_id": "11e008f3-218a-47af-a3c4-12fb058a9017",
       "title": "Fackson Angels Senior vs Royal Queens FC",
       "homeTeam": "Fackson Angels Senior",
       "awayTeam": "Royal Queens FC",
@@ -72,15 +193,15 @@
       "category": "free_age",
       "date": "2026-10-26",
       "time": "14:30",
-      "venue": "Main Arena Stadium",
+      "venue": "Meiran Field Estate - Ojokoro Housing Estate Field, Meiran Alagbado",
       "status": "upcoming",
       "homeScore": 0,
       "awayScore": 0,
       "competition": "National Championship Super Cup",
-      "createdAt": "2026-10-15T13:23:20.981Z"
+      "createdAt": "2026-10-16T09:39:30.398Z"
     },
     {
-      "_id": "cd10bb95-adb4-4b92-b55c-330358189066",
+      "_id": "8dadf9e7-9853-4da6-b47c-f495aa80c075",
       "title": "Fackson Next Pro U13 vs City United Youth",
       "homeTeam": "Fackson Next Pro U13",
       "awayTeam": "City United Youth",
@@ -90,15 +211,15 @@
       "category": "u13",
       "date": "2026-10-12",
       "time": "10:00",
-      "venue": "Fackson Academy Stadium Complex",
+      "venue": "Meiran Field Estate - Ojokoro Housing Estate Field, Meiran Alagbado",
       "status": "completed",
       "homeScore": 4,
       "awayScore": 1,
       "competition": "Youth Cup Quarter Final",
-      "createdAt": "2026-10-15T13:23:20.981Z"
+      "createdAt": "2026-10-16T09:39:30.398Z"
     },
     {
-      "_id": "53fefc54-ff6c-4af1-abdf-cb1cbe2d3dc7",
+      "_id": "fe9513aa-4c1c-463b-b36e-f91f199d4b60",
       "title": "Fackson Angels U17 vs Metropolitan Stars",
       "homeTeam": "Fackson Angels U17",
       "awayTeam": "Metropolitan Stars",
@@ -113,12 +234,12 @@
       "homeScore": 3,
       "awayScore": 1,
       "competition": "Regional Invitational Final",
-      "createdAt": "2026-10-15T13:23:20.981Z"
+      "createdAt": "2026-10-16T09:39:30.398Z"
     }
   ],
   "registrations": [
     {
-      "_id": "14660308-3470-4c0d-bfdb-d9e587ddf83c",
+      "_id": "de4a26ba-c722-489c-92f0-ec5d06e41bf8",
       "playerName": "Michael Okorie",
       "dateOfBirth": "2012-06-15",
       "gender": "male",
@@ -130,7 +251,7 @@
       "position": "Attacking Midfielder",
       "experience": "Captain of St. Jude School team, 3 years grassroots experience",
       "status": "reviewed",
-      "createdAt": "2026-10-15T13:23:20.981Z"
+      "createdAt": "2026-10-16T09:39:30.398Z"
     }
   ],
   "payments": []
