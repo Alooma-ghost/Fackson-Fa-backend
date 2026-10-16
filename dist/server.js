@@ -6,6 +6,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = __importDefault(require("express"));
 const cors_1 = __importDefault(require("cors"));
 const path_1 = __importDefault(require("path"));
+const fs_1 = __importDefault(require("fs"));
 const dotenv_1 = __importDefault(require("dotenv"));
 dotenv_1.default.config();
 const db_1 = require("./config/db");
@@ -28,9 +29,19 @@ app.use((0, cors_1.default)({
 }));
 app.use(express_1.default.json({ limit: '20mb' }));
 app.use(express_1.default.urlencoded({ extended: true, limit: '20mb' }));
-// Static uploads directory
-const uploadsPath = path_1.default.join(__dirname, '../uploads');
-app.use('/uploads', express_1.default.static(uploadsPath));
+// Static uploads directory with CORS and fallback
+const uploadsPath = fs_1.default.existsSync(path_1.default.resolve(__dirname, '../uploads'))
+    ? path_1.default.resolve(__dirname, '../uploads')
+    : path_1.default.resolve(process.cwd(), 'uploads');
+if (!fs_1.default.existsSync(uploadsPath)) {
+    fs_1.default.mkdirSync(uploadsPath, { recursive: true });
+}
+app.use('/uploads', (req, res, next) => {
+    res.header('Access-Control-Allow-Origin', '*');
+    res.header('Access-Control-Allow-Methods', 'GET, HEAD, OPTIONS');
+    res.header('Access-Control-Allow-Headers', 'Content-Type, Origin, Accept');
+    next();
+}, express_1.default.static(uploadsPath));
 // API Routes
 app.use('/api/auth', authRoutes_1.default);
 app.use('/api/upload', uploadRoutes_1.default);

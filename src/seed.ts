@@ -1,7 +1,7 @@
 import dotenv from 'dotenv';
 dotenv.config();
 
-import { connectDB, getIsMongoConnected, saveLocalDB } from './config/db';
+import { connectDB, getIsMongoConnected, loadLocalDB, saveLocalDB } from './config/db';
 import { Player } from './models/Player';
 import { GalleryItem } from './models/GalleryItem';
 import { News } from './models/News';
@@ -127,46 +127,52 @@ const initialMatches = [
 export const seedDatabase = async () => {
   console.log('🌱 Seeding Fackson Football Academy initial dataset...');
 
-  // Always seed local storage
-  const localData = {
-    players: initialPlayers.map(p => ({ _id: crypto.randomUUID(), ...p, createdAt: new Date().toISOString() })),
-    gallery: initialGallery.map(g => ({ _id: crypto.randomUUID(), ...g, createdAt: new Date().toISOString() })),
-    news: initialNews.map(n => ({ _id: crypto.randomUUID(), ...n, createdAt: new Date().toISOString() })),
-    matches: initialMatches.map(m => ({ _id: crypto.randomUUID(), ...m, createdAt: new Date().toISOString() })),
-    registrations: [
-      {
-        _id: crypto.randomUUID(),
-        playerName: 'Michael Okorie',
-        dateOfBirth: '2012-06-15',
-        gender: 'male',
-        academyPreference: 'next_pro',
-        category: 'u13',
-        parentName: 'Chief Okorie',
-        phone: '+234 803 123 4567',
-        email: 'okorie.fam@example.com',
-        position: 'Attacking Midfielder',
-        experience: 'Captain of St. Jude School team, 3 years grassroots experience',
-        status: 'reviewed',
-        createdAt: new Date().toISOString()
-      }
-    ],
-    payments: []
-  };
-  saveLocalDB(localData);
-  console.log('💾 Local datastore successfully populated.');
+  // Only seed local datastore if it is empty
+  const currentDB = loadLocalDB();
+  if (currentDB.news.length === 0 && currentDB.matches.length === 0 && currentDB.gallery.length === 0) {
+    const localData = {
+      players: initialPlayers.map(p => ({ _id: crypto.randomUUID(), ...p, createdAt: new Date().toISOString() })),
+      gallery: initialGallery.map(g => ({ _id: crypto.randomUUID(), ...g, createdAt: new Date().toISOString() })),
+      news: initialNews.map(n => ({ _id: crypto.randomUUID(), ...n, createdAt: new Date().toISOString() })),
+      matches: initialMatches.map(m => ({ _id: crypto.randomUUID(), ...m, createdAt: new Date().toISOString() })),
+      registrations: [
+        {
+          _id: crypto.randomUUID(),
+          playerName: 'Michael Okorie',
+          dateOfBirth: '2012-06-15',
+          gender: 'male',
+          academyPreference: 'next_pro',
+          category: 'u13',
+          parentName: 'Chief Okorie',
+          phone: '+234 803 123 4567',
+          email: 'okorie.fam@example.com',
+          position: 'Attacking Midfielder',
+          experience: 'Captain of St. Jude School team, 3 years grassroots experience',
+          status: 'reviewed',
+          createdAt: new Date().toISOString()
+        }
+      ],
+      payments: []
+    };
+    saveLocalDB(localData);
+    console.log('💾 Local datastore initialized with baseline data.');
+  } else {
+    console.log('ℹ️  Local datastore already populated. Preserving user data.');
+  }
 
-  // If connected to MongoDB Atlas, seed Mongoose collections too
+  // If connected to MongoDB Atlas, seed Mongoose collections only if empty
   if (getIsMongoConnected()) {
     try {
-      const existingPlayers = await Player.countDocuments();
-      if (existingPlayers === 0) {
-        await Player.insertMany(initialPlayers);
-        await GalleryItem.insertMany(initialGallery);
+      const newsCount = await News.countDocuments();
+      if (newsCount === 0) {
         await News.insertMany(initialNews);
+        console.log('✅ MongoDB Atlas seeded with baseline news articles.');
+      }
+
+      const matchCount = await Match.countDocuments();
+      if (matchCount === 0) {
         await Match.insertMany(initialMatches);
-        console.log('✅ MongoDB Atlas seeded with initial players, gallery, matches and news!');
-      } else {
-        console.log('ℹ️  MongoDB Atlas already contains records. Skipping overwrite.');
+        console.log('✅ MongoDB Atlas seeded with baseline match fixtures.');
       }
     } catch (e: any) {
       console.warn('⚠️  Could not seed to MongoDB Atlas directly:', e.message);

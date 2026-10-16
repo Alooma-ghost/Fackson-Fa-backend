@@ -45,11 +45,13 @@ const MatchSchema = new mongoose_1.Schema({
     category: { type: String, enum: ['u10', 'u13', 'u15', 'u17', 'free_age'], required: true },
     date: { type: String, required: true },
     time: { type: String, required: true },
-    venue: { type: String, default: 'Fackson Academy Stadium Complex' },
+    venue: { type: String, default: 'Meiran Field Estate - Ojokoro Housing Estate Field, Meiran Alagbado' },
     status: { type: String, enum: ['upcoming', 'completed', 'live'], default: 'upcoming' },
     homeScore: { type: Number, default: 0 },
     awayScore: { type: Number, default: 0 },
     competition: { type: String, default: 'Youth Elite Championship' },
+    gameType: { type: String, default: '11 v 11' },
+    scorers: { type: [String], default: [] },
     createdAt: { type: Date, default: Date.now }
 });
 exports.Match = mongoose_1.default.model('Match', MatchSchema);

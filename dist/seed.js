@@ -7,8 +7,6 @@ exports.seedDatabase = void 0;
 const dotenv_1 = __importDefault(require("dotenv"));
 dotenv_1.default.config();
 const db_1 = require("./config/db");
-const Player_1 = require("./models/Player");
-const GalleryItem_1 = require("./models/GalleryItem");
 const News_1 = require("./models/News");
 const Match_1 = require("./models/Match");
 const crypto_1 = __importDefault(require("crypto"));
@@ -125,46 +123,51 @@ const initialMatches = [
 ];
 const seedDatabase = async () => {
     console.log('🌱 Seeding Fackson Football Academy initial dataset...');
-    // Always seed local storage
-    const localData = {
-        players: initialPlayers.map(p => ({ _id: crypto_1.default.randomUUID(), ...p, createdAt: new Date().toISOString() })),
-        gallery: initialGallery.map(g => ({ _id: crypto_1.default.randomUUID(), ...g, createdAt: new Date().toISOString() })),
-        news: initialNews.map(n => ({ _id: crypto_1.default.randomUUID(), ...n, createdAt: new Date().toISOString() })),
-        matches: initialMatches.map(m => ({ _id: crypto_1.default.randomUUID(), ...m, createdAt: new Date().toISOString() })),
-        registrations: [
-            {
-                _id: crypto_1.default.randomUUID(),
-                playerName: 'Michael Okorie',
-                dateOfBirth: '2012-06-15',
-                gender: 'male',
-                academyPreference: 'next_pro',
-                category: 'u13',
-                parentName: 'Chief Okorie',
-                phone: '+234 803 123 4567',
-                email: 'okorie.fam@example.com',
-                position: 'Attacking Midfielder',
-                experience: 'Captain of St. Jude School team, 3 years grassroots experience',
-                status: 'reviewed',
-                createdAt: new Date().toISOString()
-            }
-        ],
-        payments: []
-    };
-    (0, db_1.saveLocalDB)(localData);
-    console.log('💾 Local datastore successfully populated.');
-    // If connected to MongoDB Atlas, seed Mongoose collections too
+    // Only seed local datastore if it is empty
+    const currentDB = (0, db_1.loadLocalDB)();
+    if (currentDB.news.length === 0 && currentDB.matches.length === 0 && currentDB.gallery.length === 0) {
+        const localData = {
+            players: initialPlayers.map(p => ({ _id: crypto_1.default.randomUUID(), ...p, createdAt: new Date().toISOString() })),
+            gallery: initialGallery.map(g => ({ _id: crypto_1.default.randomUUID(), ...g, createdAt: new Date().toISOString() })),
+            news: initialNews.map(n => ({ _id: crypto_1.default.randomUUID(), ...n, createdAt: new Date().toISOString() })),
+            matches: initialMatches.map(m => ({ _id: crypto_1.default.randomUUID(), ...m, createdAt: new Date().toISOString() })),
+            registrations: [
+                {
+                    _id: crypto_1.default.randomUUID(),
+                    playerName: 'Michael Okorie',
+                    dateOfBirth: '2012-06-15',
+                    gender: 'male',
+                    academyPreference: 'next_pro',
+                    category: 'u13',
+                    parentName: 'Chief Okorie',
+                    phone: '+234 803 123 4567',
+                    email: 'okorie.fam@example.com',
+                    position: 'Attacking Midfielder',
+                    experience: 'Captain of St. Jude School team, 3 years grassroots experience',
+                    status: 'reviewed',
+                    createdAt: new Date().toISOString()
+                }
+            ],
+            payments: []
+        };
+        (0, db_1.saveLocalDB)(localData);
+        console.log('💾 Local datastore initialized with baseline data.');
+    }
+    else {
+        console.log('ℹ️  Local datastore already populated. Preserving user data.');
+    }
+    // If connected to MongoDB Atlas, seed Mongoose collections only if empty
     if ((0, db_1.getIsMongoConnected)()) {
         try {
-            const existingPlayers = await Player_1.Player.countDocuments();
-            if (existingPlayers === 0) {
-                await Player_1.Player.insertMany(initialPlayers);
-                await GalleryItem_1.GalleryItem.insertMany(initialGallery);
+            const newsCount = await News_1.News.countDocuments();
+            if (newsCount === 0) {
                 await News_1.News.insertMany(initialNews);
-                await Match_1.Match.insertMany(initialMatches);
-                console.log('✅ MongoDB Atlas seeded with initial players, gallery, matches and news!');
+                console.log('✅ MongoDB Atlas seeded with baseline news articles.');
             }
-            else {
-                console.log('ℹ️  MongoDB Atlas already contains records. Skipping overwrite.');
+            const matchCount = await Match_1.Match.countDocuments();
+            if (matchCount === 0) {
+                await Match_1.Match.insertMany(initialMatches);
+                console.log('✅ MongoDB Atlas seeded with baseline match fixtures.');
             }
         }
         catch (e) {

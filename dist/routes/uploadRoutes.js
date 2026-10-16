@@ -8,16 +8,21 @@ const multer_1 = __importDefault(require("multer"));
 const path_1 = __importDefault(require("path"));
 const fs_1 = __importDefault(require("fs"));
 const router = (0, express_1.Router)();
-const uploadDir = path_1.default.join(__dirname, '../../uploads');
-if (!fs_1.default.existsSync(uploadDir)) {
-    fs_1.default.mkdirSync(uploadDir, { recursive: true });
-}
+const getUploadDir = () => {
+    const dir1 = path_1.default.resolve(__dirname, '../../uploads');
+    const dir2 = path_1.default.resolve(process.cwd(), 'uploads');
+    const dir = fs_1.default.existsSync(dir1) ? dir1 : dir2;
+    if (!fs_1.default.existsSync(dir)) {
+        fs_1.default.mkdirSync(dir, { recursive: true });
+    }
+    return dir;
+};
 const storage = multer_1.default.diskStorage({
     destination: (req, file, cb) => {
-        cb(null, uploadDir);
+        cb(null, getUploadDir());
     },
     filename: (req, file, cb) => {
-        const ext = path_1.default.extname(file.originalname);
+        const ext = path_1.default.extname(file.originalname).toLowerCase();
         const uniqueName = `fackson_${Date.now()}_${Math.round(Math.random() * 1e9)}${ext}`;
         cb(null, uniqueName);
     }

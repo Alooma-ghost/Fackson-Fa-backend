@@ -1,5 +1,25 @@
 {
-  "players": [],
+  "players": [
+    {
+      "_id": "15e0a64e-c10e-4adc-9771-2ce71269b7ca",
+      "name": "fawas Idris",
+      "academy": "next_pro",
+      "category": "u17",
+      "position": "Forward",
+      "jerseyNumber": 10,
+      "age": 16,
+      "photoUrl": "/uploads/fackson_1792156238865_81234984.jpeg",
+      "bio": "Captain",
+      "stats": {
+        "appearances": 116,
+        "goals": 0,
+        "assists": 18,
+        "cleanSheets": 0
+      },
+      "featured": true,
+      "createdAt": "2026-10-16T13:10:48.752Z"
+    }
+  ],
   "gallery": [
     {
       "_id": "gal-papa-national",
@@ -8,7 +28,13 @@
       "category": "matches",
       "academy": "next_pro",
       "imageUrl": "/images/gallery/papa-national-team.jpg",
-      "tags": ["Papa Mustapha Daniel", "Super Eagles", "Nigeria", "Alumni", "NK Celje"],
+      "tags": [
+        "Papa Mustapha Daniel",
+        "Super Eagles",
+        "Nigeria",
+        "Alumni",
+        "NK Celje"
+      ],
       "createdAt": "2026-10-16T10:00:00.000Z"
     },
     {
@@ -18,7 +44,13 @@
       "category": "training",
       "academy": "angels",
       "imageUrl": "/images/gallery/fatimo-shuaib-training.jpg",
-      "tags": ["Fatimo Shuaib", "Fackson Angels", "Training", "Meiran Field Estate", "Agility"],
+      "tags": [
+        "Fatimo Shuaib",
+        "Fackson Angels",
+        "Training",
+        "Meiran Field Estate",
+        "Agility"
+      ],
       "createdAt": "2026-10-16T09:50:00.000Z"
     },
     {
@@ -28,7 +60,13 @@
       "category": "matches",
       "academy": "angels",
       "imageUrl": "/images/gallery/fatimo-shuaib-match-action.jpg",
-      "tags": ["Fatimo Shuaib", "Match Action", "Duel", "Fackson Angels", "NWFL"],
+      "tags": [
+        "Fatimo Shuaib",
+        "Match Action",
+        "Duel",
+        "Fackson Angels",
+        "NWFL"
+      ],
       "createdAt": "2026-10-16T09:40:00.000Z"
     },
     {
@@ -38,7 +76,13 @@
       "category": "matches",
       "academy": "angels",
       "imageUrl": "/images/gallery/fatimo-shuaib-flamingos-team.jpg",
-      "tags": ["Fatimo Shuaib", "Nigeria Flamingos", "FIFA U-17 World Cup", "Fackson Angels", "National Team"],
+      "tags": [
+        "Fatimo Shuaib",
+        "Nigeria Flamingos",
+        "FIFA U-17 World Cup",
+        "Fackson Angels",
+        "National Team"
+      ],
       "createdAt": "2026-10-16T09:30:00.000Z"
     },
     {
@@ -48,7 +92,12 @@
       "category": "matches",
       "academy": "next_pro",
       "imageUrl": "/images/gallery/papa-celje-strike.jpg",
-      "tags": ["Papa Daniel", "NK Celje", "Slovenia PrvaLiga", "European League"],
+      "tags": [
+        "Papa Daniel",
+        "NK Celje",
+        "Slovenia PrvaLiga",
+        "European League"
+      ],
       "createdAt": "2026-10-16T09:20:00.000Z"
     },
     {
@@ -58,7 +107,13 @@
       "category": "academy_life",
       "academy": "next_pro",
       "imageUrl": "/images/gallery/rasheed-akanbi-boluspor.jpg",
-      "tags": ["Rasheed Akanbi", "Boluspor", "Turkey TFF 1. Lig", "Transfer Signing", "Alumni"],
+      "tags": [
+        "Rasheed Akanbi",
+        "Boluspor",
+        "Turkey TFF 1. Lig",
+        "Transfer Signing",
+        "Alumni"
+      ],
       "createdAt": "2026-10-16T09:10:00.000Z"
     },
     {
@@ -68,7 +123,13 @@
       "category": "matches",
       "academy": "next_pro",
       "imageUrl": "/images/gallery/rasheed-akanbi-action.jpg",
-      "tags": ["Rasheed Akanbi", "Boluspor", "Match Action", "Goal Scoring", "Europe"],
+      "tags": [
+        "Rasheed Akanbi",
+        "Boluspor",
+        "Match Action",
+        "Goal Scoring",
+        "Europe"
+      ],
       "createdAt": "2026-10-16T09:00:00.000Z"
     },
     {
@@ -78,7 +139,13 @@
       "category": "trophies",
       "academy": "next_pro",
       "imageUrl": "/images/gallery/rasheed-akanbi-sheriff.jpg",
-      "tags": ["Rasheed Akanbi", "Sheriff Tiraspol", "UEFA Europa League", "Celebration", "Europe"],
+      "tags": [
+        "Rasheed Akanbi",
+        "Sheriff Tiraspol",
+        "UEFA Europa League",
+        "Celebration",
+        "Europe"
+      ],
       "createdAt": "2026-10-16T08:50:00.000Z"
     },
     {
@@ -88,7 +155,13 @@
       "category": "academy_life",
       "academy": "next_pro",
       "imageUrl": "/images/gallery/rasheed-akanbi-ronaldo.jpg",
-      "tags": ["Rasheed Akanbi", "Cristiano Ronaldo", "Manchester United", "Sheriff Tiraspol", "UEFA Europa League"],
+      "tags": [
+        "Rasheed Akanbi",
+        "Cristiano Ronaldo",
+        "Manchester United",
+        "Sheriff Tiraspol",
+        "UEFA Europa League"
+      ],
       "createdAt": "2026-10-16T08:40:00.000Z"
     }
   ],
@@ -205,6 +278,26 @@
       "awayScore": 1,
       "competition": "Regional Invitational Final",
       "createdAt": "2026-10-16T09:39:30.398Z"
+    },
+    {
+      "_id": "74a96f17-1e75-4e87-9e69-4c4641fa05a8",
+      "title": "Fackson Next Pro U17 vs apex",
+      "homeTeam": "Fackson Next Pro U17",
+      "awayTeam": "apex",
+      "homeLogo": "/logos/fackson-next-pro.jpg",
+      "awayLogo": "/uploads/fackson_1792156271749_511476375.jpeg",
+      "academy": "next_pro",
+      "category": "u17",
+      "date": "2026-10-16",
+      "time": "15:00",
+      "venue": "Meiran Field Estate - Ojokoro Housing Estate Field, Meiran Alagbado",
+      "status": "upcoming",
+      "homeScore": 0,
+      "awayScore": 0,
+      "competition": "CY UNITY CUP",
+      "gameType": "8 aside",
+      "scorers": [],
+      "createdAt": "2026-10-16T13:11:55.727Z"
     }
   ],
   "registrations": [

@@ -24,7 +24,7 @@ router.get('/', async (req: Request, res: Response) => {
 // POST match
 router.post('/', async (req: Request, res: Response) => {
   try {
-    const { title, homeTeam, awayTeam, homeLogo, awayLogo, academy, category, date, time, venue, status, homeScore, awayScore, competition } = req.body;
+    const { title, homeTeam, awayTeam, homeLogo, awayLogo, academy, category, date, time, venue, status, homeScore, awayScore, competition, gameType, scorers } = req.body;
     if (!homeTeam || !awayTeam || !academy || !category || !date || !time) {
       return res.status(400).json({ success: false, message: 'Please provide all mandatory match fields' });
     }
@@ -39,11 +39,13 @@ router.post('/', async (req: Request, res: Response) => {
       category,
       date,
       time,
-      venue: venue || 'Fackson Academy Stadium Complex',
+      venue: venue || 'Meiran Field Estate - Ojokoro Housing Estate Field, Meiran Alagbado',
       status: status || 'upcoming',
       homeScore: Number(homeScore) || 0,
       awayScore: Number(awayScore) || 0,
-      competition: competition || 'Youth Elite Championship'
+      competition: competition || 'Youth Elite Championship',
+      gameType: gameType || '11 v 11',
+      scorers: Array.isArray(scorers) ? scorers : typeof scorers === 'string' && scorers ? (scorers as string).split(',').map((s: string) => s.trim()) : []
     });
 
     return res.status(201).json({ success: true, data: match });
