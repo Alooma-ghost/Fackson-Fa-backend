@@ -186,6 +186,20 @@
   ],
   "news": [
     {
+      "_id": "news-match-pch-vs-fackson-nextpro",
+      "title": "MATCH FIXTURE: PCH FC vs Fackson NextPro (11 v 11)",
+      "slug": "match-fixture-pch-fc-vs-fackson-nextpro-abule-adoo",
+      "excerpt": "Away fixture scheduled for 2026-10-17 at 12:53. Venue: Abule adoo. Competition: Abule Adoo Competition.",
+      "content": "OFFICIAL MATCH FIXTURE ANNOUNCEMENT\n\nThe academy management has confirmed the upcoming fixture:\n\n• Fixture: PCH FC vs Fackson NextPro\n• Match Type: Away Fixture (Visiting Squad)\n• Competition: Abule Adoo Competition\n• Game Format: 11 v 11\n• Match Date: 2026-10-17\n• Kickoff Time: 12:53 (WAT)\n• Venue / Pitch: Abule adoo\n• Academy Squad: Fackson Next Pro (Male) [Senior First Team]\n• Status: UPCOMING\n\nSupporters and scouts are warmly invited to watch our squad in action at Abule adoo.",
+      "coverImage": "/logos/fackson-next-pro.jpg",
+      "category": "match_fixture",
+      "academy": "next_pro",
+      "author": "Fackson FA Matchday Desk",
+      "date": "2026-10-17",
+      "featured": true,
+      "createdAt": "2026-10-16T19:30:00.000Z"
+    },
+    {
       "_id": "380eefb1-02e7-490f-a350-8d0d1968a536",
       "title": "Fackson Next Pro & Angels Announce 2026/2027 Open Academy Trials",
       "slug": "open-academy-trials-2026-2027",
@@ -317,6 +331,26 @@
       "gameType": "8 aside",
       "scorers": [],
       "createdAt": "2026-10-16T13:11:55.727Z"
+    },
+    {
+      "_id": "match-pch-vs-fackson-nextpro",
+      "title": "PCH FC vs Fackson NextPro",
+      "homeTeam": "PCH FC",
+      "awayTeam": "Fackson NextPro",
+      "homeLogo": "",
+      "awayLogo": "/logos/fackson-next-pro.jpg",
+      "academy": "next_pro",
+      "category": "free_age",
+      "date": "2026-10-17",
+      "time": "12:53",
+      "venue": "Abule adoo",
+      "status": "upcoming",
+      "homeScore": 0,
+      "awayScore": 0,
+      "competition": "Abule Adoo Competition",
+      "gameType": "11 v 11",
+      "scorers": [],
+      "createdAt": "2026-10-16T19:30:00.000Z"
     }
   ],
   "registrations": [
