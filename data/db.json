@@ -2,22 +2,41 @@
   "players": [
     {
       "_id": "15e0a64e-c10e-4adc-9771-2ce71269b7ca",
-      "name": "fawas Idris",
+      "name": "Fawas Idris",
       "academy": "next_pro",
       "category": "u17",
       "position": "Forward",
       "jerseyNumber": 10,
       "age": 16,
       "photoUrl": "/uploads/fackson_1792156238865_81234984.jpeg",
-      "bio": "Captain",
+      "bio": "Team Captain and prolific attacking forward for Fackson Next Pro.",
       "stats": {
         "appearances": 116,
-        "goals": 0,
+        "goals": 34,
         "assists": 18,
         "cleanSheets": 0
       },
       "featured": true,
       "createdAt": "2026-10-16T13:10:48.752Z"
+    },
+    {
+      "_id": "player-fc-koper-star",
+      "name": "Ahmed Ankrah",
+      "academy": "next_pro",
+      "category": "free_age",
+      "position": "Midfielder",
+      "jerseyNumber": 8,
+      "age": 21,
+      "photoUrl": "/uploads/fackson_1792063109712_949755031.jpeg",
+      "bio": "Dynamic central midfielder and standout academy graduate competing in European league football with FC Koper.",
+      "stats": {
+        "appearances": 42,
+        "goals": 8,
+        "assists": 14,
+        "cleanSheets": 0
+      },
+      "featured": true,
+      "createdAt": "2026-10-15T12:18:29.000Z"
     }
   ],
   "gallery": [
