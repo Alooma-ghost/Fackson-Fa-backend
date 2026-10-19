@@ -148,7 +148,7 @@ export const EmailService = {
                       Have questions or need to reschedule? Contact coaching staff:
                     </p>
                     <p style="margin: 0 0 15px; color: #ffd000; font-size: 13px; font-weight: 600;">
-                      Phone/WhatsApp: +234 812 345 6789 &bull; Email: trials@facksonfa.com
+                      Phone/WhatsApp: +234 812 345 6789 &bull; Email: Facksonacademy@gmail.com
                     </p>
                     <p style="margin: 0; color: #64748b; font-size: 11px;">
                       &copy; ${new Date().getFullYear()} Fackson Football Academy. All Rights Reserved.
